@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Определение авторства</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="header">Определение авторства</h1>
+
+  <div class="section">
+    <h3 class="title">Изображение</h3>
+    <div class="input-row">
+      <input class="input" id="inputImg" type="file" accept="image/*">
+      <button class="button" id="predictBtnImg">Предсказать</button>
+    </div>
+    <p class="output" id="outputImg"></p>
+  </div>
+
+  <div class="section">
+    <h3 class="title">Музыка</h3>
+    <div class="input-row">
+      <input class="input" id="inputMusic" type="file" accept="audio/*">
+      <button class="button" id="predictBtnMusic">Предсказать</button>
+    </div>
+    <p class="output" id="outputMusic"></p>
+  </div>
+
+  <div class="section">
+    <h3 class="title">Текст</h3>
+    <div class="text-section">
+      <div class="inputs-column">
+        <textarea class="input" id="inputTxt" placeholder="Введите текст"></textarea>
+        <input class="input" id="inputTxtFile" type="file" accept=".txt,.doc,.docx">
+      </div>
+      <button class="button-txt" id="predictBtnTxt">Предсказать</button>
+    </div>
+    <p class="output" id="outputTxt"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

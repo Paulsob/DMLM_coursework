@@ -1,4 +1,9 @@
 flask
 flask-cors
-python-dotenv
-requests
+numpy
+librosa
+soundfile
+joblib
+tensorflow
+scikit-learn
+Pillow

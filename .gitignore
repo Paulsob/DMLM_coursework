@@ -31,3 +31,5 @@ build/
 # Environment variables
 .env
 .env.local
+
+server/models/music/artist20-temp.joblib.pkl

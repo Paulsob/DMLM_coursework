@@ -22,7 +22,7 @@ N_FFT = 2048
 HOP_LENGTH = 512
 
 DEFAULT_JOBLIB = os.path.join(HERE, 'artist20-temp.joblib.pkl')
-DEFAULT_WAV = os.path.join(HERE, 'Prince_-_I_Wanna_Be_Your_Lover.wav')
+DEFAULT_WAV = os.path.join(HERE, 'data/Prince_-_I_Wanna_Be_Your_Lover.wav')
 
 DEFAULT_MODEL = os.path.join(HERE, '20_32_0.h5')
 
@@ -130,9 +130,4 @@ def run_prediction(
     top = compare_embedding(emb, enroll, topn=10)
     best_lbl, best_dist = top[0]
     print(f"Best match: {best_lbl}, distance={best_dist:.4f}")
-
-
-
-if __name__ == '__main__':
-    run_prediction()
-
+    return best_lbl
